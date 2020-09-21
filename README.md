@@ -25,10 +25,15 @@ Device configuration
 The I2S2 pmod can be connected to any pmod connector on the Arty-7 board.  
 By default, the litex is configured to support pmod on `JA` connector.  
 The PMOD I2S2 jumper has to switch the device into a master mode. Put the jumper on the `MST` position.   
-This allows the device to generate required signals using its internal circuits.
- 
+This allows the device to generate required signals using its internal circuits. 
+
+Example setup
+-----------------
+
+![](img/i2s-zephyr-setup.jpg)   
+
 Prerequisites
-----------------
+-----------------
 
 ### Building the gateware
 Clone the repository and submodules:
