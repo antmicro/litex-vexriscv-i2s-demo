@@ -24,7 +24,7 @@ Device configuration
 
 The I2S2 pmod can be connected to any pmod connector on the Arty-7 board.  
 By default, the litex is configured to support pmod on `JA` connector.  
-The PMOD I2S2 jumper has to switch the device into a master mode. Put the jumper on the `MST` position.   
+The PMOD I2S2 jumper has to switch the device into a master mode. To do so put the jumper on the `MST` position.   
 This allows the device to generate required signals using its internal circuits. 
 
 Example setup
@@ -36,12 +36,15 @@ Prerequisites
 -----------------
 
 ### Building the gateware
+Install the vivado toolchain. You can download it from official Xilinx site.  
+Install the riscv toolchain. Add toolchain to your system path.  
 Clone the repository and submodules:
 ```bash
 git clone https://github.com/antmicro/zephyr-on-litex-vexriscv
 cd zephyr-on-litex-vexriscv
 git submodule update --init --recursive
-./init
+source ./init
+source ${PATH_TO_VIVADO_TOOLCHAIN}/settings64.sh
 ./make.py --board=arty --build --with_mmcm --with_i2s --with_ethernet
 ```
 
