@@ -34,20 +34,22 @@ Example setup
 
 Prerequisites
 -----------------
-
-### Building the gateware
-Install the Vivado toolchain. You can download it from the official Xilinx site.  
-Install the RISC-V toolchain. Add the toolchain to your system path.  
-Clone the repository and submodules:
+Get all required submodules:
 ```bash
-git clone https://github.com/antmicro/zephyr-on-litex-vexriscv
-cd zephyr-on-litex-vexriscv
 git submodule update --init --recursive
-source ./init
-source ${PATH_TO_VIVADO_TOOLCHAIN}/settings64.sh
-./make.py --board=arty --build --with_mmcm --with_i2s --with_ethernet
 ```
 
-### Building the Zephyr 
-Follow this [tutorial](https://github.com/antmicro/zephyr-on-litex-vexriscv-build) to set up the Zephyr for LiteX and then
-build the [I2S Zephyr example](https://github.com/zephyrproject-rtos/zephyr/tree/master/samples/drivers/i2s/litex)
+### Building
+Install the Vivado toolchain. You can download Vivado using this [link](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive.html).
+The 2017.3 or newer version of Vivado is recommended.
+
+Run below commands:
+```bash
+source ${PATH_TO_VIVADO_TOOLCHAIN}/settings64.sh
+./build_i2s_zephyr.sh
+```
+
+Output will be placed in `binaries` directory.  
+ - Gateware - arty.bit
+ - Firmware - zephyr.bin
+
