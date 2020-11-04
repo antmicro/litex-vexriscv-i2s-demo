@@ -30,7 +30,7 @@ This allows the device to generate required signals using its internal circuits.
 Example setup
 -----------------
 
-![](img/i2s-zephyr-setup.jpg)   
+![](img/i2s-zephyr-setup.png)   
 
 Prerequisites
 -----------------
