@@ -1,3 +1,6 @@
+[submodule "litex-buildenv"]
+	path = litex-buildenv
+	url = https://github.com/timvideos/litex-buildenv/
 [submodule "zephyr-on-litex-vexriscv"]
 	path = zephyr-on-litex-vexriscv
 	url = https://github.com/antmicro/zephyr-on-litex-vexriscv
