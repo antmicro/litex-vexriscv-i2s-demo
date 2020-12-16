@@ -1,5 +1,6 @@
 #!/bin/bash
 set -x
+set -e
 
 main_directory="$(pwd)"
 binary_dir="$main_directory/binaries"
