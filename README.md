@@ -39,6 +39,13 @@ Get all required submodules:
 git submodule update --init --recursive
 ```
 
+Install dependencies:
+```bash
+apt update
+apt install build-essential bzip2 python3 python3-dev python3-pip
+pip3 install pyyaml
+```
+
 ### Building
 Install the Vivado toolchain. You can download Vivado using this [link](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive.html).
 The 2017.3 or newer version of Vivado is recommended.
