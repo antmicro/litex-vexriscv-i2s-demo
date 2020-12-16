@@ -22,6 +22,7 @@ export TARGET=base
 ./scripts/download-env.sh
 source scripts/enter-env.sh
 
+export PYTHONPATH=$PWD/third_party/litex:$PWD/third_party/migen
 # build the zephyr-on-litexvexriscv
 cd "$litex_vexriscv_dir"
 ./make.py --board=arty --build --with_mmcm --with_i2s --with_ethernet
