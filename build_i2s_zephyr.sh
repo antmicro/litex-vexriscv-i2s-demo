@@ -8,6 +8,7 @@ litex_vexriscv_dir="$main_directory/zephyr-on-litex-vexriscv"
 zephyr_dir="$main_directory/zephyr"
 
 mkdir -p "$binary_dir"
+pip3 install -r zephyr/scripts/requirements.txt
 
 # prepare the litex-buildenv 
 cd litex-buildenv
