@@ -1,5 +1,6 @@
-I2S driver demo running in Zephyr
-==================
+# I2S driver demo running in Zephyr
+
+Copyright (c) 2020-2021 [Antmicro](https://www.antmicro.com)
 
 I2S sound driver allows endpoint applications to receive and transmit audio PCM frames.
 
@@ -9,8 +10,8 @@ We can distinguish two main parts of the sound system.
  - The I2S Zephyr driver that allows collecting and transmitting sound samples using the 
    real-time operating system.
 
-Devices
------------------
+## Devices
+
 
 To use the driver you need an FPGA board that is supported by the LiteX SoC build system and the I2S codec.
 The driver was tested with:
@@ -19,21 +20,19 @@ The driver was tested with:
 
 The following instructions pertain to a setup consisting of those devices.
 
-Device configuration
------------------
+## Device configuration
 
 The I2S2 Pmod can be connected to any Pmod connector on the Arty-7 board.  
 By default, LiteX is configured to support Pmod on `JA` connector.  
 The PMOD I2S2 jumper has to switch the device into master mode. To do so, put the jumper in the `MST` position.   
 This allows the device to generate required signals using its internal circuits. 
 
-Example setup
------------------
+## Example setup
 
 ![](img/i2s-zephyr-setup.png)   
 
-Prerequisites
------------------
+## Prerequisites
+
 Get all required submodules:
 ```bash
 git submodule update --init --recursive
