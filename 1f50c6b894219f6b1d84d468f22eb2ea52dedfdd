@@ -1,0 +1,14 @@
+{
+  "categories": [
+    "ASIC & FPGA",
+    "Edge AI & Software"
+  ],
+  "tags": [
+    "fpga",
+    "risc-v",
+    "zephyr",
+    "rtos",
+    "i2s",
+    "drivers"
+  ]
+}
